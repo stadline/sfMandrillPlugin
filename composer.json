@@ -10,8 +10,7 @@
     }
   ],
   "require": {
-    "composer/installers": "^1.0",
-    "mandrill/mandrill": "^1.0"
+    "mandrill/mandrill": "^1.0.55",
   },
   "extra": {
     "branch-alias": {
