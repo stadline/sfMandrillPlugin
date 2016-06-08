@@ -1,0 +1,21 @@
+{
+  "name": "stadline/sf-mandrill-plugin",
+  "type": "symfony1-plugin",
+  "description": "Symfony plugin to send mail with Mandrill",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "alex-pex",
+      "email": "alexandre.paixao@stadline.com"
+    }
+  ],
+  "require": {
+    "composer/installers": "^1.0",
+    "mandrill/mandrill": "^1.0"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}
