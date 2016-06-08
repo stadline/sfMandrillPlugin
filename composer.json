@@ -10,7 +10,7 @@
     }
   ],
   "require": {
-    "mandrill/mandrill": "^1.0.55",
+    "mandrill/mandrill": "^1.0.55"
   },
   "extra": {
     "branch-alias": {
