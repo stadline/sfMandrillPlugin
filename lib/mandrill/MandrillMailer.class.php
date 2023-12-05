@@ -66,6 +66,10 @@ class MandrillMailer
             'global_merge_vars' => $this->convertVars($template->getVars()),
         );
 
+        if ($replyTo = sfConfig::get('app_mandrill_reply_to')) {
+            $message['headers']['Reply-To'] = $replyTo;
+        }
+
         // add attachments
         if ($template instanceof MandrillAttachmentCollectionInterface) {
             $message['attachments'] = $template->getAttachments();
@@ -91,6 +95,10 @@ class MandrillMailer
             'from_name' => sfConfig::get('app_mandrill_from_name'),
             'to' => $this->strategy->convertAddresses($template->getAddresses()),
         );
+
+        if ($replyTo = sfConfig::get('app_mandrill_reply_to')) {
+            $message['headers']['Reply-To'] = $replyTo;
+        }
 
         // add attachments
         if ($template instanceof MandrillAttachmentCollectionInterface) {
